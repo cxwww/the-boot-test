@@ -19,17 +19,17 @@ public class UserRepositoryTest {
 	
 	@Test
 	public void TestUser() throws Exception {
-		userRepository.save(new User("a1","p1",0));
-		userRepository.save(new User("a1","p11",0));
-		userRepository.save(new User("a2","p2",0));
+//		userRepository.save(new User("a1","p1",0));
+//		userRepository.save(new User("a1","p11",0));
+//		userRepository.save(new User("a2","p2",0));
 		
-		User u1 = userRepository.findByUsername("a1");
-		User u2 = userRepository.findById((long)1);
-		userRepository.updateUserStatus((long)1, 1);
-		long count = userRepository.countByUsername("a1");
+		User u1 = userRepository.findByName("a1");
+		User u2 = userRepository.findById(1);
+		userRepository.updateUserStatus(1, 1);
+		long count = userRepository.countByName("a1");
 		
 		Assert.assertEquals(count, 1);
-		Assert.assertEquals(3, userRepository.findAll());
+		Assert.assertEquals(2, userRepository.findAll().size());
 	}
 	
 }

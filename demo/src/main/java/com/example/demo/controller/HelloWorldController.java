@@ -16,14 +16,6 @@ public class HelloWorldController {
 		return "home";
 	}
 	
-	@RequestMapping("/getUser")
-	public User getUser() {
-		User user = new User();
-		user.setName("username");
-		user.setPassword("password");
-		return user;
-	}
-	
 	@RequestMapping("/getDemoP")
 	public DemoProperties getDemoP() {
 		return new DemoProperties();

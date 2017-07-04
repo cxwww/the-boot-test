@@ -3,6 +3,7 @@ package com.example.demo.dao;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.domain.User;
 
@@ -17,14 +18,27 @@ import com.example.demo.domain.User;
  */
 public interface UserRepository extends JpaRepository<User, Long>{
 	
-	User findByUsername(String username);
+	User findByName(String name); //User中属性为name，所以不能使用findByUsername
 	
-	User findById(Long id);
+	User findById(int id);
 	
+	
+	/*
+	 * org.springframework.dao.InvalidDataAccessApiUsageException: 
+	 * Executing an update/delete query; 
+	 * nested exception is javax.persistence.TransactionRequiredException: 
+	 * Executing an update/delete query
+	 */
+	/**
+	 * 更新、删除操作，需要增加@Transactional事务
+	 * @param id
+	 * @param status
+	 */
+	@Transactional
 	@Modifying
-	@Query("update User set status = ?2 where id = ?1")
-	void updateUserStatus(Long id, int status);
+	@Query("update User u set u.status = ?2 where u.id = ?1")
+	void updateUserStatus(int id, int status);
 	
-	@Query("select count(*) from User where username = ?1")
-	long countByUsername(String username);
+	@Query("select count(*) from User where name = ?1")
+	long countByName(String name);
 }
