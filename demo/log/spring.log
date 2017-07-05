@@ -3200,3 +3200,1238 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2017-07-04 18:02:28.046  INFO 9256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2017-07-04 18:02:28.048  INFO 9256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2017-07-04 18:02:28.096  INFO 9256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2017-07-05 10:38:45.612  INFO 14272 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 14272 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 10:38:45.614  INFO 14272 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 10:38:45.720  INFO 14272 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74a5c835: startup date [Wed Jul 05 10:38:45 CST 2017]; root of context hierarchy
+2017-07-05 10:38:48.054  INFO 14272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:38:48.203  INFO 14272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:38:48.239  INFO 14272 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 10:38:50.559  INFO 14272 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 10:38:50.585  INFO 14272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 10:38:50.587  INFO 14272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 10:38:50.758  INFO 14272 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 10:38:50.760  INFO 14272 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5045 ms
+2017-07-05 10:38:52.350  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 10:38:52.357  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 10:38:52.360  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 10:38:52.362  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 10:38:52.364  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 10:38:52.365  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 10:38:52.379  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 10:38:53.471  INFO 14272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:38:55.106  INFO 14272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:38:56.529  INFO 14272 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74a5c835: startup date [Wed Jul 05 10:38:45 CST 2017]; root of context hierarchy
+2017-07-05 10:38:56.669  INFO 14272 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 10:38:56.671  INFO 14272 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 10:38:56.676  INFO 14272 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 10:38:56.678  INFO 14272 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 10:38:56.684  INFO 14272 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 10:38:56.685  INFO 14272 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 10:38:56.760  INFO 14272 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:38:56.761  INFO 14272 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:38:56.834  INFO 14272 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:38:57.377  INFO 14272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 10:38:57.472  INFO 14272 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 10:38:57.485  INFO 14272 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 10:38:57.509  INFO 14272 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 10:38:57.616  INFO 14272 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 10:38:57.630  INFO 14272 --- [restartedMain] com.example.demo.Application             : Started Application in 12.42 seconds (JVM running for 13.153)
+2017-07-05 10:38:59.916  INFO 14272 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 10:38:59.917  INFO 14272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 10:38:59.954  INFO 14272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2017-07-05 10:40:06.173  INFO 9100 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 9100 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 10:40:06.175  INFO 9100 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 10:40:06.280  INFO 9100 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78940d7d: startup date [Wed Jul 05 10:40:06 CST 2017]; root of context hierarchy
+2017-07-05 10:40:08.411  INFO 9100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:40:08.517  INFO 9100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:40:08.562  INFO 9100 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 10:40:10.996  INFO 9100 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 10:40:11.020  INFO 9100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 10:40:11.022  INFO 9100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 10:40:11.236  INFO 9100 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 10:40:11.237  INFO 9100 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4962 ms
+2017-07-05 10:40:11.893  INFO 9100 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 10:40:11.905  INFO 9100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 10:40:11.906  INFO 9100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 10:40:11.907  INFO 9100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 10:40:11.907  INFO 9100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 10:40:11.908  INFO 9100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 10:40:11.911  INFO 9100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 10:40:12.977  INFO 9100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:40:14.305  INFO 9100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:40:15.929  INFO 9100 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78940d7d: startup date [Wed Jul 05 10:40:06 CST 2017]; root of context hierarchy
+2017-07-05 10:40:16.083  INFO 9100 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 10:40:16.085  INFO 9100 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 10:40:16.086  INFO 9100 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 10:40:16.098  INFO 9100 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 10:40:16.147  INFO 9100 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 10:40:16.149  INFO 9100 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 10:40:16.272  INFO 9100 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:40:16.274  INFO 9100 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:40:16.375  INFO 9100 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:40:17.066  INFO 9100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 10:40:17.393  INFO 9100 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 10:40:17.407  INFO 9100 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 10:40:17.430  INFO 9100 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 10:40:17.563  INFO 9100 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 10:40:17.573  INFO 9100 --- [restartedMain] com.example.demo.Application             : Started Application in 11.852 seconds (JVM running for 12.732)
+2017-07-05 10:40:27.171  INFO 9100 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 10:40:27.172  INFO 9100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 10:40:27.224  INFO 9100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 52 ms
+2017-07-05 10:41:55.727  INFO 9100 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78940d7d: startup date [Wed Jul 05 10:40:06 CST 2017]; root of context hierarchy
+2017-07-05 10:41:55.734  INFO 9100 --- [Thread-10] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-07-05 10:41:55.737  INFO 9100 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-07-05 10:41:55.739  INFO 9100 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:41:56.546  INFO 9100 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 9100 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 10:41:56.549  INFO 9100 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 10:41:56.569  INFO 9100 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@139baebf: startup date [Wed Jul 05 10:41:56 CST 2017]; root of context hierarchy
+2017-07-05 10:42:13.933  INFO 7220 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 7220 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 10:42:13.935  INFO 7220 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 10:42:14.040  INFO 7220 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ca3abc7: startup date [Wed Jul 05 10:42:14 CST 2017]; root of context hierarchy
+2017-07-05 10:42:16.038  INFO 7220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:42:16.113  INFO 7220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:42:16.139  INFO 7220 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 10:42:17.921  INFO 7220 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 10:42:17.943  INFO 7220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 10:42:17.945  INFO 7220 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 10:42:18.121  INFO 7220 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 10:42:18.122  INFO 7220 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4086 ms
+2017-07-05 10:42:18.647  INFO 7220 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 10:42:18.653  INFO 7220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 10:42:18.655  INFO 7220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 10:42:18.656  INFO 7220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 10:42:18.656  INFO 7220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 10:42:18.656  INFO 7220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 10:42:18.657  INFO 7220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 10:42:19.487  INFO 7220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:42:20.842  INFO 7220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:42:22.026  INFO 7220 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ca3abc7: startup date [Wed Jul 05 10:42:14 CST 2017]; root of context hierarchy
+2017-07-05 10:42:22.146  INFO 7220 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 10:42:22.149  INFO 7220 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 10:42:22.150  INFO 7220 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 10:42:22.154  INFO 7220 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 10:42:22.157  INFO 7220 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 10:42:22.242  INFO 7220 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:42:22.243  INFO 7220 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:42:22.304  INFO 7220 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:42:22.748  INFO 7220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 10:42:22.842  INFO 7220 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 10:42:22.856  INFO 7220 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 10:42:22.876  INFO 7220 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 10:42:22.979  INFO 7220 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 10:42:22.989  INFO 7220 --- [restartedMain] com.example.demo.Application             : Started Application in 9.516 seconds (JVM running for 10.431)
+2017-07-05 10:42:32.377  INFO 7220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 10:42:32.377  INFO 7220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 10:42:32.419  INFO 7220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2017-07-05 10:45:59.678  INFO 6892 --- [main] com.example.demo.SpringRedisTest         : Starting SpringRedisTest on DESKTOP-4KTSJQH with PID 6892 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 10:45:59.680  INFO 6892 --- [main] com.example.demo.SpringRedisTest         : No active profile set, falling back to default profiles: default
+2017-07-05 10:45:59.752  INFO 6892 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@484970b0: startup date [Wed Jul 05 10:45:59 CST 2017]; root of context hierarchy
+2017-07-05 10:46:01.171  INFO 6892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:46:01.259  INFO 6892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:46:01.297  INFO 6892 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 10:46:03.179  INFO 6892 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:46:04.766  INFO 6892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:46:06.550  INFO 6892 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@484970b0: startup date [Wed Jul 05 10:45:59 CST 2017]; root of context hierarchy
+2017-07-05 10:46:06.664  INFO 6892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 10:46:06.668  INFO 6892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 10:46:06.671  INFO 6892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 10:46:06.674  INFO 6892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 10:46:06.679  INFO 6892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 10:46:06.682  INFO 6892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 10:46:06.735  INFO 6892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:46:06.736  INFO 6892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:46:06.812  INFO 6892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:46:07.356  INFO 6892 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 10:46:07.381  INFO 6892 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 10:46:07.404  INFO 6892 --- [main] com.example.demo.SpringRedisTest         : Started SpringRedisTest in 8.172 seconds (JVM running for 9.157)
+2017-07-05 10:46:07.927  INFO 6892 --- [Thread-7] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@484970b0: startup date [Wed Jul 05 10:45:59 CST 2017]; root of context hierarchy
+2017-07-05 10:46:08.005  INFO 6892 --- [Thread-7] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-07-05 10:46:08.037  INFO 6892 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:47:40.524  INFO 2508 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 2508 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 10:47:40.526  INFO 2508 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 10:47:40.609  INFO 2508 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e129db9: startup date [Wed Jul 05 10:47:40 CST 2017]; root of context hierarchy
+2017-07-05 10:47:42.291  INFO 2508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:47:42.369  INFO 2508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:47:42.409  INFO 2508 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 10:47:44.204  INFO 2508 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 10:47:44.224  INFO 2508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 10:47:44.225  INFO 2508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 10:47:44.380  INFO 2508 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 10:47:44.381  INFO 2508 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3776 ms
+2017-07-05 10:47:44.924  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 10:47:44.931  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 10:47:44.933  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 10:47:44.935  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 10:47:44.936  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 10:47:44.937  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 10:47:44.949  INFO 2508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 10:47:45.856  INFO 2508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:47:47.109  INFO 2508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:47:48.280  INFO 2508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e129db9: startup date [Wed Jul 05 10:47:40 CST 2017]; root of context hierarchy
+2017-07-05 10:47:48.401  INFO 2508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 10:47:48.403  INFO 2508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 10:47:48.407  INFO 2508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 10:47:48.411  INFO 2508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 10:47:48.415  INFO 2508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 10:47:48.420  INFO 2508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 10:47:48.478  INFO 2508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:47:48.484  INFO 2508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:47:48.553  INFO 2508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:47:49.067  INFO 2508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 10:47:49.158  INFO 2508 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 10:47:49.174  INFO 2508 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 10:47:49.195  INFO 2508 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 10:47:49.289  INFO 2508 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 10:47:49.300  INFO 2508 --- [restartedMain] com.example.demo.Application             : Started Application in 9.15 seconds (JVM running for 9.795)
+2017-07-05 10:47:54.961  INFO 2508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 10:47:54.961  INFO 2508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 10:47:55.007  INFO 2508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+2017-07-05 10:48:47.975  INFO 12808 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 12808 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 10:48:47.978  INFO 12808 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 10:48:48.068  INFO 12808 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33ba4fd1: startup date [Wed Jul 05 10:48:48 CST 2017]; root of context hierarchy
+2017-07-05 10:48:50.308  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:48:50.397  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:48:50.434  INFO 12808 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 10:48:52.913  INFO 12808 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 10:48:52.963  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 10:48:52.966  INFO 12808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 10:48:53.170  INFO 12808 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 10:48:53.171  INFO 12808 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5106 ms
+2017-07-05 10:48:53.738  INFO 12808 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 10:48:53.744  INFO 12808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 10:48:53.747  INFO 12808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 10:48:53.749  INFO 12808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 10:48:53.749  INFO 12808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 10:48:53.750  INFO 12808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 10:48:53.750  INFO 12808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 10:48:54.706  INFO 12808 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:48:56.442  INFO 12808 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:48:57.707  INFO 12808 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33ba4fd1: startup date [Wed Jul 05 10:48:48 CST 2017]; root of context hierarchy
+2017-07-05 10:48:57.851  INFO 12808 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 10:48:57.853  INFO 12808 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 10:48:57.854  INFO 12808 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 10:48:57.856  INFO 12808 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 10:48:57.860  INFO 12808 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 10:48:57.860  INFO 12808 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 10:48:57.911  INFO 12808 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:48:57.912  INFO 12808 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:48:57.971  INFO 12808 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:48:58.421  INFO 12808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 10:48:58.509  INFO 12808 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 10:48:58.522  INFO 12808 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 10:48:58.544  INFO 12808 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 10:48:58.630  INFO 12808 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 10:48:58.640  INFO 12808 --- [restartedMain] com.example.demo.Application             : Started Application in 11.065 seconds (JVM running for 11.746)
+2017-07-05 10:48:59.770  INFO 12808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 10:48:59.771  INFO 12808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 10:48:59.809  INFO 12808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2017-07-05 10:51:24.963  INFO 11716 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 11716 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 10:51:24.966  INFO 11716 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 10:51:25.053  INFO 11716 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e129db9: startup date [Wed Jul 05 10:51:25 CST 2017]; root of context hierarchy
+2017-07-05 10:51:26.896  INFO 11716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:51:27.035  INFO 11716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:51:27.098  INFO 11716 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 10:51:28.893  INFO 11716 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 10:51:28.925  INFO 11716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 10:51:28.929  INFO 11716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 10:51:29.095  INFO 11716 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 10:51:29.096  INFO 11716 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4047 ms
+2017-07-05 10:51:29.648  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 10:51:29.654  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 10:51:29.656  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 10:51:29.657  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 10:51:29.657  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 10:51:29.658  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 10:51:29.658  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 10:51:30.510  INFO 11716 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:51:31.847  INFO 11716 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:51:33.329  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e129db9: startup date [Wed Jul 05 10:51:25 CST 2017]; root of context hierarchy
+2017-07-05 10:51:33.476  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 10:51:33.478  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 10:51:33.480  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 10:51:33.482  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 10:51:33.489  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 10:51:33.490  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 10:51:33.542  INFO 11716 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:51:33.543  INFO 11716 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:51:33.619  INFO 11716 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:51:34.101  INFO 11716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 10:51:34.179  INFO 11716 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 10:51:34.194  INFO 11716 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 10:51:34.214  INFO 11716 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 10:51:34.313  INFO 11716 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 10:51:34.324  INFO 11716 --- [restartedMain] com.example.demo.Application             : Started Application in 9.743 seconds (JVM running for 10.37)
+2017-07-05 10:51:38.040  INFO 11716 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 10:51:38.041  INFO 11716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 10:51:38.085  INFO 11716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2017-07-05 10:54:01.123  INFO 11716 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e129db9: startup date [Wed Jul 05 10:51:25 CST 2017]; root of context hierarchy
+2017-07-05 10:54:01.130  INFO 11716 --- [Thread-10] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-07-05 10:54:01.135  INFO 11716 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-07-05 10:54:01.139  INFO 11716 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:54:01.851  INFO 11716 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 11716 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 10:54:01.854  INFO 11716 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 10:54:01.859  INFO 11716 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a1a6ad4: startup date [Wed Jul 05 10:54:01 CST 2017]; root of context hierarchy
+2017-07-05 10:54:02.494  INFO 11716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:54:02.525  INFO 11716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 10:54:02.537  INFO 11716 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 10:54:02.828  INFO 11716 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 10:54:02.829  INFO 11716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 10:54:02.831  INFO 11716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 10:54:02.864  INFO 11716 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 10:54:02.866  INFO 11716 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1007 ms
+2017-07-05 10:54:02.977  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 10:54:02.979  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 10:54:02.980  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 10:54:02.982  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 10:54:02.982  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 10:54:02.984  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 10:54:02.985  INFO 11716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 10:54:03.217  INFO 11716 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:54:03.342  INFO 11716 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 10:54:03.573  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a1a6ad4: startup date [Wed Jul 05 10:54:01 CST 2017]; root of context hierarchy
+2017-07-05 10:54:03.585  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 10:54:03.586  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 10:54:03.588  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 10:54:03.589  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 10:54:03.592  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 10:54:03.593  INFO 11716 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 10:54:03.609  INFO 11716 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:54:03.610  INFO 11716 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:54:03.630  INFO 11716 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 10:54:03.746  INFO 11716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 10:54:03.829  INFO 11716 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 10:54:03.837  INFO 11716 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 10:54:03.845  INFO 11716 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 10:54:03.859  INFO 11716 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 10:54:03.863  INFO 11716 --- [restartedMain] com.example.demo.Application             : Started Application in 2.088 seconds (JVM running for 159.909)
+2017-07-05 10:55:14.360  INFO 11716 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 10:55:14.361  INFO 11716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 10:55:14.367  INFO 11716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2017-07-05 10:57:04.020 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 10:58:04.010 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 10:59:04.009 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 11:00:04.009 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 11:01:04.004 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 11:02:04.005 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 11:03:04.009 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 11:04:04.005 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 11:05:04.004 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 11:06:04.004 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 11:07:04.009 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 23 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 30 common frames omitted
+
+2017-07-05 11:08:04.005 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.GeneratedMethodAccessor61.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 22 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 29 common frames omitted
+
+2017-07-05 11:09:04.007 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.GeneratedMethodAccessor61.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 22 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 29 common frames omitted
+
+2017-07-05 11:10:04.003 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.GeneratedMethodAccessor61.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 22 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 29 common frames omitted
+
+2017-07-05 11:11:04.007 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.GeneratedMethodAccessor61.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 22 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 29 common frames omitted
+
+2017-07-05 11:12:04.005 ERROR 11716 --- [pool-4-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.data.redis.RedisConnectionFailureException: java.net.SocketTimeoutException: Read timed out; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:67) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisExceptionConverter.convert(JedisExceptionConverter.java:41) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:37) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.convertJedisAccessException(JedisConnection.java:242) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2090) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:129) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations$7.doInRedis(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:207) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:126) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:91) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:131) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:398) ~[spring-session-1.3.1.RELEASE.jar:na]
+	at sun.reflect.GeneratedMethodAccessor61.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_131]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_131]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:202) ~[jedis-2.9.0.jar:na]
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:151) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:276) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.smembers(BinaryJedis.java:1312) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnection.sMembers(JedisConnection.java:2088) ~[spring-data-redis-1.8.4.RELEASE.jar:na]
+	... 22 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at java.net.SocketInputStream.read(Unknown Source) ~[na:1.8.0_131]
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:196) ~[jedis-2.9.0.jar:na]
+	... 29 common frames omitted
+
+2017-07-05 11:56:37.476  INFO 4436 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 4436 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 11:56:37.478  INFO 4436 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 11:56:37.569  INFO 4436 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41f2353a: startup date [Wed Jul 05 11:56:37 CST 2017]; root of context hierarchy
+2017-07-05 11:56:39.415  INFO 4436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 11:56:39.493  INFO 4436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 11:56:39.527  INFO 4436 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 11:56:41.556  INFO 4436 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 11:56:41.581  INFO 4436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 11:56:41.584  INFO 4436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 11:56:41.773  INFO 4436 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 11:56:41.774  INFO 4436 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4210 ms
+2017-07-05 11:56:42.343  INFO 4436 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 11:56:42.348  INFO 4436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 11:56:42.351  INFO 4436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 11:56:42.353  INFO 4436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 11:56:42.353  INFO 4436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 11:56:42.354  INFO 4436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 11:56:42.355  INFO 4436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 11:56:43.277  INFO 4436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 11:56:44.715  INFO 4436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 11:56:45.971  INFO 4436 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41f2353a: startup date [Wed Jul 05 11:56:37 CST 2017]; root of context hierarchy
+2017-07-05 11:56:46.127  INFO 4436 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 11:56:46.130  INFO 4436 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 11:56:46.131  INFO 4436 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 11:56:46.134  INFO 4436 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 11:56:46.139  INFO 4436 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 11:56:46.141  INFO 4436 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 11:56:46.197  INFO 4436 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 11:56:46.202  INFO 4436 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 11:56:46.259  INFO 4436 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 11:56:46.746  INFO 4436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 11:56:46.840  INFO 4436 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 11:56:46.855  INFO 4436 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 11:56:46.874  INFO 4436 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 11:56:46.963  INFO 4436 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 11:56:46.973  INFO 4436 --- [restartedMain] com.example.demo.Application             : Started Application in 9.904 seconds (JVM running for 10.576)
+2017-07-05 11:56:58.823  INFO 4436 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 11:56:58.823  INFO 4436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 11:56:58.873  INFO 4436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+2017-07-05 12:02:04.519  INFO 8392 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 8392 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 12:02:04.523  INFO 8392 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 12:02:04.650  INFO 8392 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e484299: startup date [Wed Jul 05 12:02:04 CST 2017]; root of context hierarchy
+2017-07-05 12:02:06.644  INFO 8392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 12:02:06.758  INFO 8392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 12:02:06.804  INFO 8392 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 12:02:08.846  INFO 8392 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 12:02:08.870  INFO 8392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 12:02:08.874  INFO 8392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 12:02:09.042  INFO 8392 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 12:02:09.043  INFO 8392 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4401 ms
+2017-07-05 12:02:09.583  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 12:02:09.590  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 12:02:09.592  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 12:02:09.594  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 12:02:09.595  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 12:02:09.595  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 12:02:09.597  INFO 8392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 12:02:10.449  INFO 8392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 12:02:12.061  INFO 8392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 12:02:13.238  INFO 8392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e484299: startup date [Wed Jul 05 12:02:04 CST 2017]; root of context hierarchy
+2017-07-05 12:02:13.401  INFO 8392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 12:02:13.403  INFO 8392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 12:02:13.405  INFO 8392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 12:02:13.408  INFO 8392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 12:02:13.417  INFO 8392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 12:02:13.419  INFO 8392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 12:02:13.468  INFO 8392 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 12:02:13.469  INFO 8392 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 12:02:13.535  INFO 8392 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 12:02:13.989  INFO 8392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 12:02:14.070  INFO 8392 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 12:02:14.083  INFO 8392 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 12:02:14.099  INFO 8392 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 12:02:14.188  INFO 8392 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 12:02:14.196  INFO 8392 --- [restartedMain] com.example.demo.Application             : Started Application in 10.129 seconds (JVM running for 10.801)
+2017-07-05 12:02:21.219  INFO 8392 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 12:02:21.220  INFO 8392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 12:02:21.261  INFO 8392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2017-07-05 12:03:08.403  INFO 8780 --- [restartedMain] com.example.demo.Application             : Starting Application on DESKTOP-4KTSJQH with PID 8780 (started by beiyongji4 in E:\work software\gith Path\the-boot-test\demo)
+2017-07-05 12:03:08.407  INFO 8780 --- [restartedMain] com.example.demo.Application             : No active profile set, falling back to default profiles: default
+2017-07-05 12:03:08.494  INFO 8780 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74a5c835: startup date [Wed Jul 05 12:03:08 CST 2017]; root of context hierarchy
+2017-07-05 12:03:10.233  INFO 8780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 12:03:10.312  INFO 8780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-07-05 12:03:10.346  INFO 8780 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.dao.UserRepository.
+2017-07-05 12:03:12.153  INFO 8780 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-05 12:03:12.174  INFO 8780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-05 12:03:12.177  INFO 8780 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-05 12:03:12.341  INFO 8780 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-05 12:03:12.342  INFO 8780 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3851 ms
+2017-07-05 12:03:12.874  INFO 8780 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-05 12:03:12.881  INFO 8780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-05 12:03:12.883  INFO 8780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2017-07-05 12:03:12.884  INFO 8780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-05 12:03:12.885  INFO 8780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-05 12:03:12.886  INFO 8780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-05 12:03:12.888  INFO 8780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'testFilter' to urls: [/*]
+2017-07-05 12:03:13.713  INFO 8780 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-05 12:03:15.051  INFO 8780 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-05 12:03:16.259  INFO 8780 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@74a5c835: startup date [Wed Jul 05 12:03:08 CST 2017]; root of context hierarchy
+2017-07-05 12:03:16.378  INFO 8780 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.controller.HelloWorldController.index()
+2017-07-05 12:03:16.379  INFO 8780 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getDemoP]}" onto public com.example.demo.component.DemoProperties com.example.demo.controller.HelloWorldController.getDemoP()
+2017-07-05 12:03:16.380  INFO 8780 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uid]}" onto public java.lang.String com.example.demo.controller.SessionController.uid(javax.servlet.http.HttpSession)
+2017-07-05 12:03:16.382  INFO 8780 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.example.demo.domain.User com.example.demo.controller.UserController.getUser()
+2017-07-05 12:03:16.386  INFO 8780 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-05 12:03:16.389  INFO 8780 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-05 12:03:16.440  INFO 8780 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 12:03:16.440  INFO 8780 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 12:03:16.515  INFO 8780 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-05 12:03:17.060  INFO 8780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-07-05 12:03:17.141  INFO 8780 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-05 12:03:17.153  INFO 8780 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-05 12:03:17.171  INFO 8780 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-07-05 12:03:17.261  INFO 8780 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-05 12:03:17.271  INFO 8780 --- [restartedMain] com.example.demo.Application             : Started Application in 9.264 seconds (JVM running for 9.905)
+2017-07-05 12:03:21.910  INFO 8780 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-05 12:03:21.911  INFO 8780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-05 12:03:21.954  INFO 8780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms

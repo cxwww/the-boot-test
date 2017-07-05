@@ -18,6 +18,11 @@ import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
+/**
+ * Spring Redis默认使用JDK进行序列化和反序列化，因此被缓存对象需要实现java.io.Serializable接口，否则缓存出错。
+ * @author
+ *
+ */
 @Configuration
 @EnableCaching
 public class RedisConfig extends CachingConfigurerSupport{
