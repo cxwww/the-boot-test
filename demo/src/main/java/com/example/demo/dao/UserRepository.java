@@ -23,7 +23,7 @@ public interface UserRepository extends JpaRepository<User, Long>{
 	User findByName(String name); //User中属性为name，所以不能使用findByUsername
 	
 	//当查询中有多个参数的时候Pageable建议做为最后一个参数传入
-	Page<User> findByUserName(String userName,Pageable pageable);
+	Page<User> findByName(String name,Pageable pageable);
 	
 	User findById(int id);
 	
