@@ -46,7 +46,7 @@ public class DataController {
 	public void pageOverview(@RequestParam(required=true) Integer size, @RequestParam(required=true) Integer page_id
 			,@RequestParam(required=true) Integer page,@RequestParam(required=true) String token) {
 		//token check redis
-		
+		srt.opsForValue().get("k1");
 	}
 	
 	@RequestMapping(value="/data/tokenC", method=RequestMethod.POST)
