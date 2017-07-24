@@ -1,5 +1,8 @@
 package com.example.demo.domain;
 
+import org.springframework.util.StringUtils;
+
+
 public class TokenRequestParam {
 	
 	//有赞云颁发给开发者的应用ID
@@ -45,6 +48,5 @@ public class TokenRequestParam {
 	public void setKdt_id(String kdt_id) {
 		this.kdt_id = kdt_id;
 	}
-	
 	
 }
